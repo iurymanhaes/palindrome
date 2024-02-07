@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+Este repositório contém um projeto React com TypeScript que implementa um formulário simples para verificar se uma palavra é um palíndromo. Ele utiliza as seguintes tecnologias: Vite como framework, json-server para criar um servidor e salvar os resultados no arquivo server.json, Material UI para a interface do usuário, react-hook-form para gerenciar o formulário e yup para validação.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Como iniciar o aplicativo**
 
-Currently, two official plugins are available:
+Certifique-se de ter o Node.js instalado em sua máquina.
+Clone este repositório para o seu ambiente local.
+Navegue até o diretório raiz do projeto.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Execute o seguinte comando para instalar as dependências:
 
-## Expanding the ESLint configuration
+    npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Em seguida, execute o seguinte comando para iniciar o servidor json:
 
-- Configure the top-level `parserOptions` property like this:
+    npx json-server --watch server.json
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Com o servidor em execução, abra outro terminal e execute o seguinte comando para iniciar o aplicativo:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+npm run dev
+
+O aplicativo será aberto em seu navegador padrão.
+
+**Como usar o aplicativo**
+
+No formulário exibido, digite uma palavra no campo de texto.
+O campo de texto aceitará apenas palavras com no mínimo 3 e no máximo 10 caracteres.
+Assim que você digitar a palavra, a cor da borda do campo será alterada para verde ou laranja, indicando se a palavra é um palíndromo ou não.
+Clique no botão "Salvar" para salvar a palavra e sua classificação como palíndromo ou não.
+A lista abaixo do formulário exibirá o conteúdo do arquivo server.json, mostrando as palavras salvas anteriormente.
