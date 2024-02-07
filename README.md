@@ -16,7 +16,7 @@ Em seguida, execute o seguinte comando para iniciar o servidor json:
 
 Com o servidor em execução, abra outro terminal e execute o seguinte comando para iniciar o aplicativo:
 
-npm run dev
+    npm run dev
 
 O aplicativo será aberto em seu navegador padrão.
 
