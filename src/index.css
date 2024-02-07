@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 50px;
+}
+
+.tablecell-border-none {
+  border: none !important;
+}
+
+
+.border-green .MuiOutlinedInput-notchedOutline{
+  border: 2px solid green !important;
+}
+
+.border-orange .MuiOutlinedInput-notchedOutline{
+  border: 2px solid orange !important;
+}
+
+.border-error .MuiOutlinedInput-notchedOutline{
+  border: 2px solid red !important;
+}

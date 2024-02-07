@@ -1,0 +1,3 @@
+interface IFormValues {
+    word: string;
+  }

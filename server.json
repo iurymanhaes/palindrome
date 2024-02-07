@@ -1,0 +1,29 @@
+{
+  "palindromes": [
+    {
+      "id": "1",
+      "value": "tenet",
+      "isPalindrome": true
+    },
+    {
+      "value": "texto",
+      "isPalindrome": false,
+      "id": "1b55"
+    },
+    {
+      "id": "7e3e",
+      "value": "texto",
+      "isPalindrome": false
+    },
+    {
+      "id": "423c",
+      "value": "texto",
+      "isPalindrome": false
+    },
+    {
+      "id": "8371",
+      "value": "tenet",
+      "isPalindrome": true
+    }
+  ]
+}
